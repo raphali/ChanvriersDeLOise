@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+@font-face {
+    font-family: Inter;
+    src: url(../../font/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+.mhomeblock2{
+    background-color: $background;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        color: $green200;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 12vh;
+        align-content: center;
+        margin-top: 5px;
+
+        @include desktop {
+            font-size:250%;
+            margin-top: 2rem;
+        }
+    }
+
+    p {
+        color: $text;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 25px;
+        text-align: center;
+        width: 80%;
+
+        @include desktop {
+            margin-bottom: 3rem;
+            width: 50%;
+            font-size: 130%;
+        }
+    }
+}

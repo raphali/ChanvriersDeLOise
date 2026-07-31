@@ -1,0 +1,66 @@
+@use "../abstracts" as *;
+@font-face {
+    font-family: Inter;
+    src: url(../../font/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+.seedblock4{
+    background-color: $background;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        color: $green200;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 10vh;
+        align-content: center;
+        margin-top: 5px;
+
+        @include desktop {
+            font-size:250%;
+            margin-top: 2rem;
+        }
+    }
+
+    p {
+        color: $text;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 1rem;
+        text-align: center;
+        width: 80%;
+
+        @include desktop {
+            width: 50%;
+            font-size: 130%;
+        }
+    }
+
+    a{
+            width: 15rem;
+            height: 3rem;
+            background-color: $green200;
+            border-radius: 7px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $background;
+            font-size: medium;
+
+            @include desktop {
+                width: 20rem;
+                margin-left: 0px;
+                margin-bottom: 4rem;
+            }
+        }
+
+        a:hover {
+            background-color: $green500;
+        }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pages/index.css">
+    <link rel="stylesheet" href="assets/css/pages/news.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <nav class="mhomenav">
+        <ul class="mhomenav__ul">
+            <button class="mhomenav__burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+                <span class="mhomenav__burger__bar"></span>
+                <span class="mhomenav__burger__bar"></span>
+                <span class="mhomenav__burger__bar"></span>
+            </button>
+            <li><a href="index.html"><img class="mhomenav__ul__leftpart" src="assets/img/Logo_chanvriers_blanc.svg" alt="logo chanvriers de l'oise"></a></li>
+            <div class="mhomenav__ul__rightpart">
+                <a class="mhomenav__ul__rightpart__a" href="index.html">Accueil</a>
+                <a class="mhomenav__ul__rightpart__a" href="chanvre.html">Le chanvre</a>
+                <a class="mhomenav__ul__rightpart__a" href="stem.html">La tige</a>
+                <a class="mhomenav__ul__rightpart__a" href="seed.html">La graine</a>
+                <a class="mhomenav__ul__rightpart__a" href="news.html">Actualités</a>
+                <li class="mhomenav__ul__rightpart__logo_boutique"><a href="market.html"><img src="assets/img/logo_boutique.svg" alt="logo boutique en ligne"></a></li>
+                <li><img class="mhomenav__ul__rightpart__logoagri" src="assets/img/pro_eng_chanvriers 1.svg" alt="logo agriculture engagés"></li>
+            </div>
+
+        </ul>
+    </nav>
+
+    <div class="mhomenav__overlay" id="overlay"></div>
+
+    <div class="mhomenav__mobile" id="mobileMenu">
+        <button class="mhomenav__mobile__close" id="closeBtn" aria-label="Fermer le menu">
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="mhomenav__mobile__ul">
+            <li><a class="mhomenav__mobile__ul__a" href="#">Accueil</a></li>
+            <li><a class="mhomenav__mobile__ul__a" href="chanvre.html">Le chanvre</a></li>
+            <li><a class="mhomenav__mobile__ul__a" href="stem.html">La tige</a></li>
+            <li><a class="mhomenav__mobile__ul__a" href="seed.html">La graine</a></li>
+            <li><a class="mhomenav__mobile__ul__a" href="news.html">Actualités</a></li>
+            <li><a class="mhomenav__mobile__ul__a" href="market.html">Boutique</a></li>
+        </ul>
+
+        <img class="mhomenav__mobile__logoagri" src="assets/img/pro_eng_chanvriers 1.svg" alt="logo agriculture engagés">
+        <script src="assets/js/nav.js" defer></script>
+    </div>
+
+<div class="mblog">
+    <div class="mblog__intro">
+        <h1>Actualités</h1>
+    </div>
+    
+    <div class="mblog__search">
+        <div class="mblog__search__box">
+        <input type="text" data-blog="search-input" placeholder="Rechercher dans les articles…" autocomplete="off">
+        </div>
+        <p class="mblog__search__meta" data-blog="search-meta"></p>
+    </div>
+    
+    <div class="mblog__cardcontainer" data-blog="grid"></div>
+    <div class="mblog__scrim" data-blog="scrim"></div>
+    <button class="mblog__reader-close" data-blog="reader-close" aria-label="Fermer l'article">✕</button>
+    <script src="assets/js/news.js"></script>
+</div>
+
+
+    <footer class="footer">
+        <div class="footer__footercontainer">
+            <div class="footer__footercontainer__presentation">
+                <img src="assets/img/logo_chanvriers_vert.svg" alt="logo chanvriers de l'oise">
+                <p>Groupe d’agriculteurs spécialisé dans la culture et transformation du chanvre depuis 2021</p>
+            </div>
+            <div class="footer__footercontainer__lien">
+                <h3>Navigation</h3>
+                <a href="stem.html">La tige</a>
+                <a href="seed.html">La graine</a>
+                <a href="company.html">L'entreprise</a>
+                <a href="news.html">Informations</a>
+                <a href="#">Mentions légales</a>
+            </div>
+            <hr class="footer__footercontainer__secondhr">
+            <div class="footer__footercontainer__contact">
+                <h3>Contactez-nous</h3>
+                <div class="footer__footercontainer__contact__link">
+                    <a href="mailto:contact@chanvriersdeloise.com"><img src="assets/img/email_icon.svg" alt="icon email"></a>
+                    <!-- <a href=""><img src="assets/img/facebook_icon.svg" alt="icon facebook"></a> -->
+                    <a href="https://www.instagram.com/chanvriersdeloise/"><img src="assets/img/instagram_icon.svg" alt="icon instagram"></a>
+                </div>
+            </div>
+            <hr class="footer__footercontainer__thirdhr">
+            <div class="footer__footercontainer__last">
+                <p>© 2026 Chanvriers de l'Oise. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

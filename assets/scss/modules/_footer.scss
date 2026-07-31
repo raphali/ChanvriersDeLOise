@@ -1,0 +1,183 @@
+@use "../abstracts" as *;
+@font-face {
+    font-family: Inter;
+    src: url(../../font/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+.footer {
+    background-color: $green500;
+    height: auto;
+    width: 100%;
+    @include desktop {
+        display: flex;
+        grid-template-columns: repeat(3,25%);
+        grid-template-rows: repeat(2,50%);
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    &__footercontainer {
+        
+        @include desktop {
+            display: flex;
+            flex-wrap: wrap;
+            width: 85rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+
+        hr {
+            margin-left: 20px;
+            margin-right: 20px;
+            @include desktop {
+                display: none;
+            }
+
+        }
+
+        &__presentation {
+            color: $background;
+            margin: 20px;
+            @include mobile {
+                display: none;
+            } 
+
+            @include tablet {
+                display: none;
+            }
+
+            @include laptop {
+                display: none;
+            }
+
+            @include desktop {
+                width: 32rem;
+                gap: 15px;
+                display: flex;
+                flex-direction: column;
+                // margin-left: 50px;
+            }
+
+            img{
+                height: 5rem;
+                @include desktop {
+                    width: 10rem;
+                    height: 5rem;
+                }
+            }
+
+        }
+
+        &__lien{
+            height: 10rem;
+            margin-left: 20px;
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: space-between;
+            // margin-top: 10px;
+            
+            @include laptop {
+                margin-top: 0rem;
+            }
+
+            @include tablet {
+                margin-top: 0rem;
+            }
+
+            @include desktop {
+                width: 20rem;
+                align-self: start;
+                
+            }
+            
+            h3 {
+                color: $background;
+                display: flex;
+                justify-content: center;
+                
+                @include desktop {
+                    justify-content: start;
+                    margin-left: 40%;
+
+                }
+            }
+            
+            
+            a {
+                text-decoration: none;
+                text-align: center;
+                color: $background;
+                
+                @include desktop {
+                    text-align: start;
+                    margin-left: 40%;
+                    
+                }
+            }
+        }
+
+        &__secondhr {
+            margin-top: 10px;
+        }
+        
+        &__contact{
+            margin:20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            @include desktop {
+                width: 25rem;
+                margin: 0px;
+                margin-top: 10px;
+            }
+
+            h3{
+                color: $background;
+                margin-bottom: 10px;
+            }
+
+            &__link{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                width: 10rem;
+                @include desktop {
+                    justify-content: center;
+                    // margin-left: 12px;
+                }
+            }
+        }
+
+        &__last{
+            
+            height: 4rem;
+            color: $background;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            @include desktop{
+                width: 80.7rem;
+                align-items: center;
+                justify-self: start;
+                margin-left: 20px;
+            }
+            
+
+            p{
+                font-size:small;
+                color: $darkest-background;
+                @include desktop {
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                }
+            }
+        }
+    }
+}

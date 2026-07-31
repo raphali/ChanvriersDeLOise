@@ -1,0 +1,352 @@
+@use "../abstracts" as *;
+
+.mblog {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $darkest-background;
+    height: auto;
+
+    @include tablet {
+        align-items: start;
+    }
+
+    &__meta {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: $green200;
+        text-transform: uppercase;
+        font-size: 75%;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.75rem;
+
+        span:last-child {
+            color: $subtext;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+    }
+
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @include tablet {
+            width: 80%;
+            margin-left: 6.5%;
+        }
+
+        @include laptop {
+            width: 90%;
+            // margin-left: 5%;
+        }
+        h1 {
+            color: $green200;
+            height: 9vh;
+            display: flex;
+            align-items: center;
+            width: 90%;
+            margin-left: 5%;
+    
+            @include tablet {
+                margin-left: 0%;
+            }
+    
+            @include desktop {
+                justify-content: center;
+                margin-top: 2rem;
+                font-size: 200%;
+            }
+    
+            @include laptop {
+                justify-content: center;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &__search {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 2rem;
+        margin-right: 8%;
+
+        @include tablet {
+            width: 80%;
+            margin-left: 6.5%;
+        }
+
+        @include laptop {
+            width: 90%;
+            margin-left: 10%;
+        }
+
+        @include desktop {
+            width: 50%;
+            // margin-left: 10%;
+            margin-right: 15.5%;
+            margin-bottom: 0;
+        }
+
+        &__box {
+            position: relative;
+            width: 80%;
+
+            input {
+                width: 100%;
+                height: 3rem;
+                background-color: $background;
+                border: none;
+                border-radius: 7px;
+                padding: 0 1.7rem 0 1rem;
+                color: $subtext;
+                font-size: large;
+                margin-left: 5.5%;
+
+                @include tablet {
+                    width: 75%;
+                    margin-left: 0%;
+                    padding: 0 0rem 0 1rem;
+                }
+
+                @include laptop {
+                    width: 25rem;
+                    padding: 0 0rem 0 1rem;
+                }
+
+                @include desktop {
+                    display: flex;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                    margin-left: 0%;
+                }
+
+                &::placeholder {
+                    color: $subtext;
+                }
+
+                &:focus {
+                    outline: 2px solid $green200;
+                }
+            }
+            
+        }
+
+        &__meta {
+            color: $subtext;
+            font-size: 85%;
+            margin-top: 0.7rem;
+            margin-left: 5.5%;
+
+            @include tablet {
+                margin-left: 0%;
+            }
+
+            @include desktop {
+                margin-left: 0%;
+            }
+        }
+    }
+
+    &__cardcontainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include desktop {
+            width: 78rem;
+            display: flex;
+            justify-content: start;
+            // margin-left: 10%;
+            gap: 4rem;
+            margin-bottom: 5rem;
+            margin-top: 2rem;
+        }
+
+        @include tablet {
+            justify-content: start;
+            gap: 2rem;
+            margin-left: 3rem;
+        }
+
+        @include laptop {
+            justify-content: space-evenly;
+            width: 90%;
+            // margin-left: 5%;
+            margin-bottom: 1rem;
+        }
+
+        &__empty {
+            width: 100%;
+            text-align: center;
+            color: $subtext;
+            padding: 3rem 1rem;
+        }
+
+        &__card {
+            background-color: $background;
+            width: 90%;
+            border-radius: 10px;
+            box-shadow: 0px 1px 10px -5px black;
+            height: auto;
+            margin-bottom: 30px;
+            padding: 2rem;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            border: none;
+            cursor: pointer;
+            font-size: medium;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+            @include desktop {
+                width: 22rem;
+            }
+
+            @include tablet {
+                width: 40%;
+            }
+
+            @include laptop {
+                width: 25rem;
+            }
+
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0px 4px 16px -5px black;
+            }
+
+            &--source {
+                visibility: hidden;
+            }
+
+            h3 {
+                color: $green200;
+                height: 5vh;
+                display: flex;
+                align-items: center;
+
+                @include desktop {
+                    font-size: 160%;
+                    margin-bottom: 1rem;
+                    margin-top: 1rem;
+                }
+            }
+
+            p {
+                color: $subtext;
+                height: auto;
+
+                @include desktop {
+                    font-size: 110%;
+                }
+            }
+
+            
+        }
+    }
+
+    &__hit {
+        background-color: rgba($green200, 0.25);
+        color: inherit;
+        border-radius: 3px;
+        padding: 0 2px;
+    }
+
+    &__reader {
+        position: fixed;
+        background-color: $background;
+        overflow-y: auto;
+        z-index: 100;
+        box-shadow: 0px 1px 10px -5px black;
+        transition: top 0.48s ease, left 0.48s ease, width 0.48s ease,
+                    height 0.48s ease, border-radius 0.48s ease;
+
+        &__inner {
+            max-width: 45rem;
+            margin: 0 auto;
+            padding: 4rem 2rem 6rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        &.is-expanded &__inner {
+            opacity: 1;
+        }
+
+        h1 {
+            height: auto;
+            color: $green200;
+            width: auto;
+            margin-bottom: 1rem;
+
+            @include desktop {
+                font-size: 220%;
+                justify-content: flex-start;
+            }
+        }
+
+        p {
+            color: $subtext;
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+
+            @include desktop {
+                font-size: 110%;
+            }
+        }
+    }
+
+    &__scrim {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(black, 0);
+        z-index: 90;
+        pointer-events: none;
+        transition: background-color 0.48s ease;
+
+        &.is-visible {
+            background-color: rgba(black, 0.5);
+            pointer-events: auto;
+        }
+    }
+
+    &__reader-close {
+        position: fixed;
+        top: 1.5rem;
+        right: 2rem;
+        z-index: 110;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        border: none;
+        background-color: $green200;
+        color: $background;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transform: scale(0.8);
+        transition: opacity 0.25s ease, transform 0.25s ease;
+
+        &.is-visible {
+            display: flex;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        &:hover {
+            background-color: $green500;
+        }
+    }
+}
+
+body.mblog-is-reading {
+    overflow: hidden;
+}
