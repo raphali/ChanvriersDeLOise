@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  background-color: #f1efe2;
 }
 .mhomenav__ul {
   width: 100%;
@@ -408,10 +409,10 @@
   .stemblock2__container {
     display: flex;
     flex-wrap: wrap;
-    justify-self: center;
     justify-content: center;
     gap: 50px;
     width: 90%;
+    margin-left: 5%;
   }
 }
 .stemblock2__container__card {
@@ -422,6 +423,11 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .stemblock2__container__card {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1600px) {
   .stemblock2__container__card {
     width: 40%;
   }
@@ -629,6 +635,23 @@
     flex-direction: row;
   }
 }
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  .footer__footercontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .footer__footercontainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 @media screen and (min-width: 1600px) {
   .footer__footercontainer {
     display: flex;
@@ -653,25 +676,67 @@
 }
 @media screen and (max-width: 479px) {
   .footer__footercontainer__presentation {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1023px) {
   .footer__footercontainer__presentation {
-    display: none;
+    width: 30%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
   .footer__footercontainer__presentation {
-    display: none;
+    width: 33%;
+    margin-top: 1rem;
   }
 }
 @media screen and (min-width: 1600px) {
   .footer__footercontainer__presentation {
+    margin-top: 0px;
     width: 32rem;
     gap: 15px;
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 479px) {
+  .footer__footercontainer__presentation__logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+}
+.footer__footercontainer__presentation__logo__footer-logo {
+  display: block;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1.15;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--footer-accent);
+  margin: 0 0 6px;
+}
+.footer__footercontainer__presentation__logo__footer-logo-sub {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--footer-text-muted);
+  margin-top: 4px;
+}
+@media screen and (max-width: 479px) {
+  .footer__footercontainer__presentation__desc {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  .footer__footercontainer__presentation__desc {
+    display: none;
   }
 }
 .footer__footercontainer__presentation img {
@@ -692,14 +757,25 @@
   align-self: center;
   justify-content: space-between;
 }
-@media screen and (min-width: 1024px) and (max-width: 1599px) {
+@media screen and (max-width: 479px) {
   .footer__footercontainer__lien {
-    margin-top: 0rem;
+    display: none;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1023px) {
   .footer__footercontainer__lien {
+    display: none;
     margin-top: 0rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .footer__footercontainer__lien {
+    margin-top: 1rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 33%;
+    display: flex;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -724,6 +800,13 @@
   text-align: center;
   color: #f1efe2;
 }
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .footer__footercontainer__lien a {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1600px) {
   .footer__footercontainer__lien a {
     text-align: start;
@@ -741,16 +824,45 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 479px) {
+  .footer__footercontainer__contact {
+    border-top: 1px solid #e5e3d6;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  .footer__footercontainer__contact {
+    width: 40%;
+    justify-content: center;
+    align-items: end;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .footer__footercontainer__contact {
+    width: 25.3%;
+    margin-top: 1rem;
+  }
+}
 @media screen and (min-width: 1600px) {
   .footer__footercontainer__contact {
     width: 25rem;
     margin: 0px;
-    margin-top: 10px;
+    margin-top: 0px;
   }
 }
 .footer__footercontainer__contact h3 {
   color: #f1efe2;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 479px) {
+  .footer__footercontainer__contact h3 {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  .footer__footercontainer__contact h3 {
+    display: none;
+  }
 }
 .footer__footercontainer__contact__link {
   display: flex;
@@ -764,12 +876,43 @@
     justify-content: center;
   }
 }
+.footer__footercontainer__contact__link__mail {
+  border: 1px solid #f1efe2;
+  border-radius: 100%;
+  height: 34px;
+  width: 34px;
+}
+.footer__footercontainer__contact__link__mail a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+.footer__footercontainer__contact__link__insta {
+  border: 1px solid #f1efe2;
+  border-radius: 100%;
+  height: 34px;
+  width: 34px;
+}
+.footer__footercontainer__contact__link__insta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+}
 .footer__footercontainer__last {
+  margin-left: 20px;
+  margin-right: 20px;
   height: 4rem;
   color: #f1efe2;
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+@media screen and (max-width: 479px) {
+  .footer__footercontainer__last {
+    border-top: 1px solid #e5e3d6;
+  }
 }
 @media screen and (min-width: 1600px) {
   .footer__footercontainer__last {
@@ -779,12 +922,18 @@
     margin-left: 20px;
   }
 }
-.footer__footercontainer__last p {
+.footer__footercontainer__last__text {
   font-size: small;
   color: #e5e3d6;
 }
+@media screen and (max-width: 479px) {
+  .footer__footercontainer__last__text {
+    display: flex;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1600px) {
-  .footer__footercontainer__last p {
+  .footer__footercontainer__last__text {
     width: 100%;
     display: flex;
     justify-content: start;

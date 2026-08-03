@@ -61,10 +61,10 @@
   .stemblock2__container {
     display: flex;
     flex-wrap: wrap;
-    justify-self: center;
     justify-content: center;
     gap: 50px;
     width: 90%;
+    margin-left: 5%;
   }
 }
 .stemblock2__container__card {
@@ -75,6 +75,11 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .stemblock2__container__card {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1600px) {
   .stemblock2__container__card {
     width: 40%;
   }
