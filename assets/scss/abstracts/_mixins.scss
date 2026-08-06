@@ -16,6 +16,12 @@
   }
 }
 
+@mixin biglaptop {
+  @media screen and (min-width: 1440px) and (max-width: 1599px) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media screen and (min-width: 1600px) {
     @content;

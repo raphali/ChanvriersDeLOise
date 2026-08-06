@@ -20,6 +20,13 @@
         align-content: center;
         margin-top: 5px;
 
+        @include mobile {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        
+
         @include desktop {
             font-size:250%;
             margin-top: 2rem;
@@ -28,11 +35,15 @@
 
     p {
         color: $text;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 25px;
         text-align: center;
-        width: 80%;
+        width: 90%;
+
+        @include mobile {
+            text-align: start;
+        }
 
         @include desktop {
             margin-bottom: 3rem;

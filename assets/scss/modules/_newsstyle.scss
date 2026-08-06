@@ -72,18 +72,25 @@
     &__search {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         margin-bottom: 2rem;
         margin-right: 8%;
 
+        @include mobile {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
         @include tablet {
-            width: 80%;
-            margin-left: 6.5%;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
         }
 
         @include laptop {
             width: 90%;
-            margin-left: 10%;
+            margin-left: 5%;
+            margin-right: 5% ;
         }
 
         @include desktop {
@@ -97,26 +104,35 @@
             position: relative;
             width: 80%;
 
+            @include tablet {
+                width: 75%;
+            }
+
             input {
                 width: 100%;
                 height: 3rem;
                 background-color: $background;
                 border: none;
                 border-radius: 7px;
-                padding: 0 1.7rem 0 1rem;
+                padding: 0 8% 0 1rem;
                 color: $subtext;
                 font-size: large;
                 margin-left: 5.5%;
 
                 @include tablet {
-                    width: 75%;
+                    width: 100%;
                     margin-left: 0%;
-                    padding: 0 0rem 0 1rem;
+                    padding: 0 30.5% 0 1rem;
                 }
 
                 @include laptop {
                     width: 25rem;
-                    padding: 0 0rem 0 1rem;
+                    padding: 0 68.9% 0 1rem;
+                    margin-left: 0%;
+                }
+
+                @include biglaptop {
+                    padding: 0 85% 0 1rem;
                 }
 
                 @include desktop {
@@ -124,6 +140,7 @@
                     margin-top: 0.5rem;
                     margin-bottom: 0.5rem;
                     margin-left: 0%;
+                    padding: 0 53.5% 0 1rem;
                 }
 
                 &::placeholder {
@@ -147,6 +164,10 @@
                 margin-left: 0%;
             }
 
+            @include laptop {
+                margin-left: 0%;
+            }
+
             @include desktop {
                 margin-left: 0%;
             }
@@ -158,11 +179,14 @@
         justify-content: center;
         flex-wrap: wrap;
 
+        @include mobile {
+            width: 100%;
+        }
+
         @include desktop {
             width: 78rem;
             display: flex;
             justify-content: start;
-            // margin-left: 10%;
             gap: 4rem;
             margin-bottom: 5rem;
             margin-top: 2rem;
@@ -171,14 +195,23 @@
         @include tablet {
             justify-content: start;
             gap: 2rem;
-            margin-left: 3rem;
+            column-gap: 10%;
+            margin-left: 5%;
+            margin-right: 5%;
         }
 
         @include laptop {
-            justify-content: space-evenly;
+            justify-content: start;
             width: 90%;
-            // margin-left: 5%;
+            gap: 1rem;
+            column-gap: 10%;
+            margin-left: 5%;
             margin-bottom: 1rem;
+            margin-right: 5%;
+        }
+
+        @include biglaptop {
+            column-gap: 5%;
         }
 
         &__empty {
@@ -210,11 +243,15 @@
             }
 
             @include tablet {
-                width: 40%;
+                width: 45%;
             }
 
             @include laptop {
-                width: 25rem;
+                width: 45%;
+            }
+
+            @include biglaptop {
+                width: 30%;
             }
 
             &:hover {

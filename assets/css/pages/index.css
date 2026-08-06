@@ -369,6 +369,13 @@
   align-content: center;
   margin-top: 5px;
 }
+@media screen and (max-width: 479px) {
+  .mhomeblock2 h2 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 @media screen and (min-width: 1600px) {
   .mhomeblock2 h2 {
     font-size: 250%;
@@ -377,11 +384,16 @@
 }
 .mhomeblock2 p {
   color: #4A4A4A;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 25px;
   text-align: center;
-  width: 80%;
+  width: 90%;
+}
+@media screen and (max-width: 479px) {
+  .mhomeblock2 p {
+    text-align: start;
+  }
 }
 @media screen and (min-width: 1600px) {
   .mhomeblock2 p {

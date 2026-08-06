@@ -366,6 +366,14 @@
   align-content: center;
   margin-top: 5px;
 }
+@media screen and (max-width: 479px) {
+  .chanvreblock2 h2 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 10vh;
+  }
+}
 @media screen and (min-width: 1600px) {
   .chanvreblock2 h2 {
     font-size: 250%;
@@ -379,6 +387,14 @@
   margin-bottom: 25px;
   text-align: center;
   width: 80%;
+}
+@media screen and (max-width: 479px) {
+  .chanvreblock2 p {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: start;
+  }
 }
 @media screen and (min-width: 1600px) {
   .chanvreblock2 p {
@@ -565,6 +581,14 @@
   align-content: center;
   margin-top: 5px;
 }
+@media screen and (max-width: 479px) {
+  .chanvreblock4 h2 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 10vh;
+  }
+}
 @media screen and (min-width: 1600px) {
   .chanvreblock4 h2 {
     font-size: 250%;
@@ -578,6 +602,14 @@
   margin-bottom: 25px;
   text-align: center;
   width: 80%;
+}
+@media screen and (max-width: 479px) {
+  .chanvreblock4 p {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: start;
+  }
 }
 @media screen and (min-width: 1600px) {
   .chanvreblock4 p {
