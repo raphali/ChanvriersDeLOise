@@ -260,7 +260,7 @@
   padding-left: 0.4rem;
 }
 .mhomenav__mobile__logoagri {
-  width: 4rem;
+  width: 6rem;
   margin-top: 2rem;
 }
 
@@ -386,6 +386,9 @@
     align-items: center;
   }
 }
+.stemblock2__intro-text p {
+  font-size: 16px;
+}
 @media screen and (min-width: 1600px) {
   .stemblock2__intro-text p {
     margin-top: 0rem;
@@ -394,6 +397,7 @@
 }
 .stemblock2__container {
   padding: 18px 16px;
+  padding-top: 0px;
 }
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
   .stemblock2__container {
@@ -466,7 +470,7 @@
   }
 }
 .stemblock2__container__card__card-desc {
-  font-size: 12px;
+  font-size: 16px;
   color: #384838;
   margin-bottom: 12px;
   line-height: 1.45;
@@ -491,7 +495,7 @@
   text-align: center;
   padding: 11px 0;
   border-radius: 6px;
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -521,6 +525,7 @@
   }
 }
 .stemblock2__container__card__badge-list__block p {
+  font-size: 16px;
   width: 85%;
   height: auto;
   margin-top: 0.5rem;

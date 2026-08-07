@@ -260,7 +260,7 @@
   padding-left: 0.4rem;
 }
 .mhomenav__mobile__logoagri {
-  width: 4rem;
+  width: 6rem;
   margin-top: 2rem;
 }
 
@@ -391,7 +391,7 @@
 }
 @media screen and (min-width: 1600px) {
   .marketcardcontainer__marketcard {
-    width: 25%;
+    width: 20%;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1023px) {
@@ -407,6 +407,7 @@
 .marketcardcontainer__marketcard img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  width: 100%;
 }
 .marketcardcontainer__marketcard h2 {
   padding: 1rem;

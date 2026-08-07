@@ -40,6 +40,7 @@
         }
 
         p{
+            font-size: 16px;
             @include desktop {
                 margin-top: 0rem;
                 width: 80%;
@@ -49,6 +50,7 @@
     
     &__container {
         padding: 18px 16px;
+        padding-top: 0px;
     
         @include laptop {
             display: flex;
@@ -119,7 +121,7 @@
             }
     
             &__card-desc{
-                font-size: 12px;
+                font-size: 16px;
                 color: #384838;
                 margin-bottom: 12px;
                 line-height: 1.45;
@@ -146,10 +148,9 @@
                 text-align: center;
                 padding: 11px 0;
                 border-radius: 6px;
-                font-size: 12.5px;
+                font-size: 14px;
                 font-weight: 600;
                 text-decoration: none;
-                // margin-top: 12px;
             }
     
             &__btn-primary:hover {
@@ -179,6 +180,7 @@
                     }
     
                     p{
+                        font-size: 16px;
                         width: 85%;
                         height: auto;
                         margin-top: 0.5rem;
