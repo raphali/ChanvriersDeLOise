@@ -282,7 +282,7 @@
 }
 @media screen and (min-width: 1600px) {
   .mhomeblock1__img {
-    height: 45rem;
+    height: 40rem;
     z-index: -1;
   }
 }
@@ -946,12 +946,14 @@
     width: 33%;
     display: flex;
     align-items: center;
+    height: 13rem;
   }
 }
 @media screen and (min-width: 1600px) {
   .footer__footercontainer__lien {
     width: 20rem;
     align-self: start;
+    height: 13rem;
   }
 }
 .footer__footercontainer__lien h3 {
@@ -982,6 +984,9 @@
     text-align: start;
     margin-left: 40%;
   }
+}
+.footer__footercontainer__lien a:hover {
+  color: #c2c2c0;
 }
 .footer__footercontainer__secondhr {
   margin-top: 10px;

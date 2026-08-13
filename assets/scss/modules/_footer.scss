@@ -163,11 +163,14 @@
                 width: 33%;
                 display: flex;
                 align-items: center;
+                
+                height: 13rem;
             }
 
             @include desktop {
                 width: 20rem;
                 align-self: start;
+                height: 13rem;
                 
             }
             
@@ -200,6 +203,10 @@
                     margin-left: 40%;
                     
                 }
+            }
+
+            a:hover {
+                color: #c2c2c0;
             }
         }
 

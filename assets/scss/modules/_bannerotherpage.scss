@@ -13,11 +13,11 @@
         object-fit: cover;
 
         @include laptop {
-            height: 30rem;
+            height: 22rem;
         }
 
         @include desktop {
-            height: 45rem;
+            height: 40rem;
         }
     } 
 

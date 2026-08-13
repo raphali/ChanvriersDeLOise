@@ -277,12 +277,12 @@
 }
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
   .bannerblock__img {
-    height: 30rem;
+    height: 22rem;
   }
 }
 @media screen and (min-width: 1600px) {
   .bannerblock__img {
-    height: 45rem;
+    height: 40rem;
   }
 }
 .bannerblock__text {
@@ -778,12 +778,14 @@
     width: 33%;
     display: flex;
     align-items: center;
+    height: 13rem;
   }
 }
 @media screen and (min-width: 1600px) {
   .footer__footercontainer__lien {
     width: 20rem;
     align-self: start;
+    height: 13rem;
   }
 }
 .footer__footercontainer__lien h3 {
@@ -814,6 +816,9 @@
     text-align: start;
     margin-left: 40%;
   }
+}
+.footer__footercontainer__lien a:hover {
+  color: #c2c2c0;
 }
 .footer__footercontainer__secondhr {
   margin-top: 10px;
